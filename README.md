@@ -85,3 +85,6 @@ The tool will be designed to remain flexible — implementation choices (e.g., l
 
 ✅ **Testing:**
 Basic tests will be included to ensure the data is parsed correctly and calculations are robust, even with missing or inconsistent data.
+<br>
+<br>
+** This proposal was written as part of a python course- https://github.com/code-Maven/wis-python-course-2025-03?tab=readme-ov-file
