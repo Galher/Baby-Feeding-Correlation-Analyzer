@@ -62,11 +62,13 @@ Output:
 ⚙️ **Technical Details:**  
 
 
-The script will take the exported Excel file and process it.
+- The script will take the exported Excel file and process it.
 
-Calculations and correlations will be presented in simple summary form.
+- Calculations and correlations will be presented in simple summary form.
 
-The tool will be designed to remain flexible — implementation choices (e.g., libraries or interfaces) will be finalized during development.  
+- The tool will be designed to remain flexible — implementation choices (e.g., libraries or interfaces) will be finalized during development.
+
+- A requirements.txt file listing required libraries will be provided for easier setup. 
 <br>
 <br>
 
@@ -77,7 +79,8 @@ The tool will be designed to remain flexible — implementation choices (e.g., l
 
 2. Place the file (e.g., baby_data.xlsx) in the project folder.
 
-3. Run the main script to receive analysis results.  
+3. Run the main script to receive analysis results, optionally from the command line.
+Example command: python main.py --input path/to/baby_data.xlsx  
 <br>
 <br>
 
