@@ -1,0 +1,21 @@
+Baby-Feeding-Correlation-Analyzer/
+├── data/                          # Excel and CSV data files
+│   ├── baby_daybook_log.xlsx
+│   └── baby_weight.xlsx
+│
+├── scripts/                       # Core processing logic
+│   ├── generate_sleep_report.py
+│   ├── generate_bottle_report.py
+│   ├── generate_dirty_diaper_report.py
+│   ├── generate_weight_report.py
+│   ├── plot_sleep_vs_bottle.py
+│   ├── plot_bottle_vs_diaper.py
+│   ├── plot_bottle_per_kg.py
+│
+├── run/                           # High-level command entry points
+│   ├── generate_all_reports.py
+│   └── plot_all_graphs.py
+│
+├── requirements.txt               # Dependencies
+├── commands.txt                   # List of run commands
+└── README.md                      # Optional documentation

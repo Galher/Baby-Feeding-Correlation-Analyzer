@@ -1,0 +1,50 @@
+# Baby Feeding Correlation Analyzer – Instructions
+
+## Step 1: Generate Reports
+
+Before running any graphs, you must first generate the necessary reports using the Excel data files.
+You can run all reports with a single command:
+
+    python run/run_all_reports.py
+
+This will generate:
+- Sleep report (`data/baby_daybook_log_sleep_report.csv`)
+- Bottle report (`data/baby_daybook_log_bottle_report.csv`)
+- Dirty diaper report (`data/baby_daybook_log_dirty_diaper_report.csv`)
+- Weight report (`data/baby_weight_report.csv`) — includes **linearly interpolated daily weights**
+
+> ⚠ Note: The weight report uses **linear interpolation** between weight points to estimate daily weights.
+> In reality, baby weight growth is **not strictly linear**, so use this approximation cautiously.
+
+---
+
+## Step 2: Plot Graphs
+
+After reports are generated, you can run all graphs at once:
+
+    python run/run_all_graphs.py
+
+This will display the following plots:
+- Sleep hours vs. bottle volume (normalized)
+- Bottle volume vs. dirty diapers (normalized)
+- Bottle volume per kg (uses estimated daily weight)
+
+---
+
+## Normalization Details
+
+Some graphs involve comparing different types of data (e.g., sleep hours vs. bottle volume).
+To make the curves comparable, **min-max normalization** is applied to each variable:
+
+    normalized_x = (x - min(x)) / (max(x) - min(x))
+
+This scales all values between 0 and 1 without altering their relative patterns.
+
+---
+
+## Requirements
+
+Before running, install dependencies listed in `requirements.txt`:
+
+    pip install -r requirements.txt
+

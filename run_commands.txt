@@ -1,0 +1,31 @@
+# 📝 Report Generation Commands
+
+# Generate sleep report
+python scripts/generate_sleep_report.py data/baby_daybook_log.xlsx
+
+# Generate bottle report
+python scripts/generate_bottle_report.py data/baby_daybook_log.xlsx
+
+# Generate dirty diaper report
+python scripts/generate_dirty_diaper_report.py data/baby_daybook_log.xlsx
+
+# Generate weight report
+python scripts/generate_weight_report.py data/baby_weight.xlsx
+
+# Run all reports at once
+python run/run_all_reports.py
+
+
+# 📈 Plotting Commands
+
+# Plot sleep hours vs bottle volume
+python scripts/plot_sleep_vs_bottle.py
+
+# Plot bottle volume vs dirty diapers
+python scripts/plot_bottle_vs_diaper.py
+
+# Plot bottle volume per kg
+python scripts/plot_bottle_per_kg.py
+
+# Run all plots at once
+python run/run_all_graphs.py
